@@ -16,21 +16,19 @@ class App extends React.Component {
   };
 
   backdropClickHandler = () => {
-    this.setState({sideDrawerOpen: false})
+    this.setState({ sideDrawerOpen: false })
   };
 
   render() {
-    let sideDrawer;
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
-      sideDrawer = <SideDrawer />;
       backdrop = <Backdrop click={this.drawerToggleClickHandler} />
     }
     return (
       <div className="App" style={{ height: "100%" }}>
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        {sideDrawer}
+        <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
         <main style={{ marginTop: '64px' }}>
           <p>This is the main content</p>
