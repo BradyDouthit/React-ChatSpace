@@ -11,9 +11,12 @@ const SideDrawer = props => {
 
     return (
         <nav className={drawerClasses}>
+            <div id="channels-header-div">
+                <h1 id="channels-header">Channels:</h1>
+            </div>
             <ul>
-                <li><a href='/'>Products</a></li>
-                <li><a href='/'>Users</a></li>
+                <li><a href='/'>Channel 1</a></li>
+                <li><a href='/'>Channel 2</a></li>
             </ul>
         </nav>
     );
