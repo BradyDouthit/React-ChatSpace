@@ -1,0 +1,13 @@
+.message-list-ul {
+    color: #fc6203;
+    width: 100%;
+    padding: 0;
+    top: 0;
+}
+.message-list-ul li {
+    top: 0;
+    list-style: none;
+    margin-bottom: 15px;
+    border-top: 1px solid #fc6203;
+    padding-left: 40px;
+}

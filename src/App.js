@@ -4,6 +4,7 @@ import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import MessageBox from './components/MessageBox/MessageBox';
+import MessageList from './components/MessageList/MessageList';
 
 class App extends React.Component {
   state = {
@@ -32,8 +33,8 @@ class App extends React.Component {
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
         <main style={{ marginTop: '64px' }}>
-          <p>This is where messages will go</p>
-          <MessageBox />
+        <MessageList />
+        <MessageBox />
         </main>
       </div>
     );
